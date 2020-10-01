@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拚賣賣</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="shopping_index.html">
+            <i class="fa fa-heart text-info" aria-hidden="true"></i>
+            六角血拼賣賣
+        </a>
+        <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-danger">12</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px" data-offset="400">
+                <div class="px-4 py-3">
+                    <h6>已選擇商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 金牌西裝 1 件">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">金牌西裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-right">$520</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal"
+                                        data-title="刪除 金牌女裝 1 件">
+                                        <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">金牌女裝</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-right">$480</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="shopping_data-enter.html" class="btn btn-primary btn-block">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> 結帳去
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter p-3">
+                <h1 class="display-4">買到剁手手！最後出清</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 列表頁 -->
+    <div class="container 😳😎 😣😈">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- 左側選單 (List group) -->
+                <div class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#pane-1">
+                        <i class="fas fa-suitcase" aria-hidden="true"></i> 金牌專賣店</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#pane-2">
+                        <i class="fas fa-gift" aria-hidden="true"></i> 禮品區</a>
+                    <a href="#" class="list-group-item list-group-item-action 😨😂">
+                        <i class="fas fa-film" aria-hidden="true"></i> 影音商品</a>
+                    <a href="#" class="list-group-item list-group-item-action 😨😂">
+                        <i class="fas fa-paw" aria-hidden="true"></i> 寵物專用</a>
+                    <a href="#" class="list-group-item list-group-item-action 😨😂">
+                        <i class="fas fa-tree" aria-hidden="true"></i> 居家環境</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="😫😅 😸😈">
+                    <!-- Search bar -->
+                    <form class="😷😂 😴😈 🙃😋">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary" type="submit">
+                                    <i class="fas fa-search" aria-hidden="true"></i> Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 主要商品列表 (Card) -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane-1">
+                        <div class="row">
+                            <!-- 金牌 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">金牌西裝</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="shopping_data-enter.html" class="btn btn-outline-secondary">
+                                                SM
+                                            </a>
+                                            <a href="shopping_data-enter.html" class="btn btn-outline-secondary">
+                                                M
+                                            </a>
+                                            <a href="shopping_data-enter.html" class="btn btn-outline-secondary disabled">
+                                                L
+                                            </a>
+                                            <a href="shopping_data-enter.html" class="btn btn-outline-secondary">
+                                                XL
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1481399124169-87493351c8a1?w=1349"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">金牌女裝</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secondary">
+                                                SM
+                                            </a>
+                                            <a href="#" class="btn btn-outline-secondary">
+                                                M
+                                            </a>
+                                            <a href="#" class="btn btn-outline-secondary">
+                                                L
+                                            </a>
+                                            <a href="#" class="btn btn-outline-secondary">
+                                                XL
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1486250944723-86bca2b15b06?w=1351"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">特工眼鏡</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-sm btn-block">
+                                            <i class="fas fa-cart-plus" aria-hidden="true"></i> 搶購去
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1350"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">特工西裝</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-sm btn-block">
+                                            <i class="fas fa-cart-plus" aria-hidden="true"></i> 搶購去
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1485373650022-3ed53f62b8f3?w=634"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">變聲領帶</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-sm btn-block">
+                                            缺貨中
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pagination -->
+                        <nav aria-label="Page navigation" class="🙂😈">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="tab-pane" id="pane-2">
+                        <div class="😟 😘😆">
+                            <!-- 禮品 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img class="card-img-top"
+                                        src="https://images.unsplash.com/photo-1482173074468-5b323335debe?w=1350"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">超精緻禮物</h4>
+                                        <p class="card-text">This is a longer card with supporting text below as a natural
+                                            lead-in to additional
+                                            content. This content
+                                            is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-sm btn-block">
+                                            <i class="fas fa-cart-plus" aria-hidden="true"></i> 搶購去
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tab-content end -->
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 列表頁 -->
+
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item">
+                    <a class="ml-3" href="#">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagrame</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="ml-3" href="#">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i> Facebook</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="ml-3" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center mt-3">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title">刪除商品</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>是否確認刪除商品</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">否</button>
+            <button type="button" class="btn btn-secondary ml-3">是</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title) // 寫入資料
+            })
+        });
+    </script>
+</body>
+
+</html>
